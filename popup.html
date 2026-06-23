@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LinkedIn Job Filter</h1>
+
+    <div class="section">
+      <label>Blocked keywords</label>
+      <input type="text" id="keywordInput" placeholder="Type a keyword and press Enter">
+      <div id="pills"></div>
+    </div>
+
+    <div class="section">
+      <label>Time filter</label>
+      <div class="toggle-row">
+        <label class="toggle">
+          <input type="checkbox" id="timeToggle" checked>
+          <span class="slider"></span>
+        </label>
+        <div id="timeControls">
+          <input type="number" id="maxHours" min="1" value="72">
+          <span class="unit-label">hours</span>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
