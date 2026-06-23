@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Job Filter",
+  "version": "1.0",
+  "description": "Filter LinkedIn jobs by keywords and posting time",
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.linkedin.com/jobs/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "LinkedIn Job Filter"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/jobs/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
